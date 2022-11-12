@@ -2,7 +2,8 @@ import json
 
 
 def handler(event, context):
-    body = {
+    body = {name=input('What is your good name? ')
+            print('Hi ' + name + ',' + ' Good Morning!')
         "message": "Go Serverless v1.0! Your function executed successfully!",
         "input": event
     }
@@ -23,5 +24,3 @@ def handler(event, context):
     }
     """
 
-name=input('What is your good name? ')
-print('Hi ' + name + ',' + ' Good Morning!')
